@@ -106,7 +106,7 @@ def consulta(nome):
         
     return jsonify(idade="usuario não encontrado"), 404
 
-@app.route('v3/user/consulta/', methods=['GET'])
+@app.route('/v3/user/consulta/', methods=['GET'])
 def consulta_usuario():
     nome = request.args.get('nome')
     email = request.args.get('email')
